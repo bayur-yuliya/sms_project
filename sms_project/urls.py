@@ -20,6 +20,6 @@ from django.urls import path
 from send_sms_app import views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', views.send_sms_view, name='send_sms'),
+    path("admin/", admin.site.urls),
+    path("", views.send_sms_view, name="send_sms"),
 ]

@@ -20,11 +20,11 @@ set TWILIO_AUTH_TOKEN=your_auth_token
 ```
 4. Run worker process
 ```
-celery -A tasks worker -l INFO 
+celery -A sms_project worker -l INFO 
 ```
 Run worker process in windows
 ```
-celery -A tasks worker -l INFO --pool=solo
+celery -A sms_project worker -l INFO --pool=solo
 ```
 4. Run Django web-server
 ```
